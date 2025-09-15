@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { WagmiProvider } from 'wagmi';
 import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { config } from './config/wagmi';
+import { DashboardLayout } from "@/components/layout/dashboard-layout";
 import Index from "./pages/Index";
 import { CreateGig } from "./pages/CreateGig";
 import NotFound from "./pages/NotFound";
@@ -21,12 +22,14 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/create-gig" element={<CreateGig />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            <DashboardLayout>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/create-gig" element={<CreateGig />} />
+                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </DashboardLayout>
           </BrowserRouter>
         </TooltipProvider>
       </RainbowKitProvider>
