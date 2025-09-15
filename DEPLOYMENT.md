@@ -35,9 +35,9 @@ Click **"Environment Variables"** and add the following:
 
 ```env
 NEXT_PUBLIC_CHAIN_ID=11155111
-NEXT_PUBLIC_RPC_URL=https://sepolia.infura.io/v3/b18fb7e6ca7045ac83c41157ab93f990
-NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=2ec9743d0d0cd7fb94dee1a7e6d33475
-NEXT_PUBLIC_INFURA_API_KEY=b18fb7e6ca7045ac83c41157ab93f990
+NEXT_PUBLIC_RPC_URL=https://sepolia.infura.io/v3/YOUR_INFURA_KEY
+NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=YOUR_WALLET_CONNECT_PROJECT_ID
+NEXT_PUBLIC_INFURA_API_KEY=YOUR_INFURA_API_KEY
 ```
 
 **Important**: Make sure to add these for all environments (Production, Preview, Development).
@@ -92,12 +92,12 @@ NEXT_PUBLIC_INFURA_API_KEY=b18fb7e6ca7045ac83c41157ab93f990
 
 ### Environment Variables Reference
 
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `NEXT_PUBLIC_CHAIN_ID` | Ethereum Sepolia chain ID | Yes |
-| `NEXT_PUBLIC_RPC_URL` | RPC endpoint for blockchain | Yes |
-| `NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID` | WalletConnect project ID | Yes |
-| `NEXT_PUBLIC_INFURA_API_KEY` | Infura API key | Yes |
+| Variable | Description | Required | How to Get |
+|----------|-------------|----------|------------|
+| `NEXT_PUBLIC_CHAIN_ID` | Ethereum Sepolia chain ID | Yes | Fixed: 11155111 |
+| `NEXT_PUBLIC_RPC_URL` | RPC endpoint for blockchain | Yes | [Infura.io](https://infura.io) |
+| `NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID` | WalletConnect project ID | Yes | [Cloud.WalletConnect.com](https://cloud.walletconnect.com) |
+| `NEXT_PUBLIC_INFURA_API_KEY` | Infura API key | Yes | [Infura.io](https://infura.io) |
 
 ### Post-Deployment Checklist
 - [ ] Site loads without errors

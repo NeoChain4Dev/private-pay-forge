@@ -1,10 +1,9 @@
 import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 import { sepolia } from 'wagmi/chains';
-import { CHAIN_ID, RPC_URL, WALLET_CONNECT_PROJECT_ID } from './constants';
 
 export const config = getDefaultConfig({
   appName: 'Private Pay Forge',
-  projectId: WALLET_CONNECT_PROJECT_ID,
+  projectId: '2ec9743d0d0cd7fb94dee1a7e6d33475',
   chains: [sepolia],
   ssr: false,
 });
