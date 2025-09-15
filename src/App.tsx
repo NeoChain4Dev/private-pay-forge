@@ -14,8 +14,8 @@ import '@rainbow-me/rainbowkit/styles.css';
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <WagmiProvider config={config}>
+  <WagmiProvider config={config}>
+    <QueryClientProvider client={queryClient}>
       <RainbowKitProvider>
         <TooltipProvider>
           <Toaster />
@@ -30,8 +30,8 @@ const App = () => (
           </BrowserRouter>
         </TooltipProvider>
       </RainbowKitProvider>
-    </WagmiProvider>
-  </QueryClientProvider>
+    </QueryClientProvider>
+  </WagmiProvider>
 );
 
 export default App;
